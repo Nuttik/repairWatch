@@ -1,0 +1,38 @@
+.first-screen{
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.55)) 0% 100%, url("/assets/images/bg/first-screen.jpg") center top no-repeat;
+  background-size: cover;
+  color:$color-white;
+  padding-top:1rem;
+
+  &__content{
+    max-width: 480px;
+    margin: 138px auto;
+    padding-bottom: 360px;
+  }
+
+  h1{
+    text-align: center;
+    text-shadow: $shadow;
+  }
+ &__metro{
+  display: flex;
+  align-items:center;
+  width: fit-content;
+  margin: 1rem auto;
+
+  &-ico{
+    width: 46px;
+    height: 55px;
+    margin-right: 1rem;
+  }
+  &-desc{
+    font-size: 1.5rem;
+    text-shadow: $shadow;
+  }
+ }
+  svg{
+    path{
+      fill:$color-white;
+    }
+  }
+}
