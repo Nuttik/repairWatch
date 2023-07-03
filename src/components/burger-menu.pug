@@ -1,0 +1,13 @@
+mixin burger(listLinks)
+  .burger-menu
+    .burger-menu__wrapper-bg
+    input(type="checkbox" name="burger-ico" id="burger-ico")
+    label(for="burger-ico" class="burger-menu__ico") 
+      span.burger-menu__ico-line
+      span.burger-menu__ico-line
+      span.burger-menu__ico-line
+    .burger-menu__wrapper.close
+      ul.menu
+        each link in listLinks
+          li.menu__item
+            a(href=link.src)= link.text

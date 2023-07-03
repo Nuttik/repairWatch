@@ -1,0 +1,37 @@
+.header{
+  max-width: $container-width-desk;
+  margin: auto;
+  padding-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: 14rem auto 40px;
+  justify-items: end;
+  align-items: center;
+  gap:3rem; 
+  position: relative;
+
+  &__contacts{
+    display: flex;
+    align-items: center;
+  }
+
+  &__tel{
+    a{      
+      font-size: 1.25rem;
+      display: flex;
+      align-items: center;
+      svg{
+        margin-right: 12px;
+      }
+    }
+  }
+
+  &__adress{
+    font-size: 1.125rem;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    svg{
+      margin-right: 12px;
+    }
+  }
+}

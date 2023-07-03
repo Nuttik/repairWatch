@@ -1,9 +1,10 @@
-//служебное
-//@import "./utils/normalize";
-//@import "./utils/fonts";
-//@import "./utils/variables";
+@import "./utils/variables";
+@import "./utils/reset";
 @import "./utils/global";
 
-//компоненты
+@import "./components/burger-menu";
+@import "./components/header";
+@import "./components/logotype";
+@import "./components/services-list";
 
-//секции
+@import "./sections/first-screen";

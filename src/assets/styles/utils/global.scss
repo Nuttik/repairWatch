@@ -1,4 +1,18 @@
+*{
+  -webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+body{	
+	font-family: 'Lora', serif;
+}
 h1{
-  font-size: 3rem;
- color:red;
+	font-size: 3rem;
+}
+a{
+	&:active, &:hover {
+		color:$color-secondary;
+	}
 }
