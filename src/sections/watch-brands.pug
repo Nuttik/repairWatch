@@ -1,0 +1,6 @@
+include ../components/gallery.pug
+
+section.watchBrands
+  .page-container.page-container_watchBrands
+    h2 Ремонтируем <span class="mobile-hidden">наручные часы марок</span>:
+    +gallery("brands", "assets/images/gallery/brands/", ".png", 5)

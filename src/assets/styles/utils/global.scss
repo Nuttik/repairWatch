@@ -7,12 +7,26 @@
 }
 body{	
 	font-family: 'Lora', serif;
+	color:$color-black-text;
 }
 h1{
-	font-size: 3rem;
+	font-size: 3.1rem;
 }
+h2{
+	font-size: 3rem;
+	font-family: Cormorant Infant;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 42px;
+	}
 a{
 	&:active, &:hover {
 		color:$color-secondary;
 	}
+}
+.page-container{
+  max-width: $container-width-desk;
+  margin: auto;
+	padding-top: $section-padding-top;
+	padding-bottom: $section-padding-bottom;
 }
