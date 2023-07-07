@@ -2,7 +2,14 @@ mixin gallery(modifier, paht, extension, count)
   div(class='gallery' class= "gallery_" + modifier)
     div(class= "gallery__wrapper")
       ul.gallery__items-list
-      - var n = 1;
-        while n < count
-          li.gallery__item
-            img(src= paht + n + extension, alt="photo-" + n++)
+        - var n = 1;
+          while n <= count
+            li.gallery__item
+              img(src= paht + n + extension, alt="photo-" + n++)
+    div.gallery__tools
+      - var i = 1;
+          while i <= count
+            input(type="radio" name="gallery__radio-"+modifier id="item"+i).gallery__radio
+            label(for="item"+i).gallery__indicator
+            <br>
+             - i++
