@@ -55,6 +55,13 @@ function fonts()
     .pipe(browserSync.stream())
 }
 
+function docs() 
+{
+  return src('src/assets/docs/**/*')
+    .pipe(dest('build/assets/docs/'))
+    .pipe(browserSync.stream())
+}
+
 async function images()
 {
   imagecomp(
@@ -105,8 +112,8 @@ function clear()
     .pipe(clean())
 }
 
-exports.dev   = parallel(browsersync, startWatch, html, css, images, fonts, scripts)
-exports.build = series(clear, parallel(html, css, images, fonts, scripts))
+exports.dev   = parallel(browsersync, startWatch, html, css, images, fonts, scripts, docs)
+exports.build = series(clear, parallel(html, css, images, fonts, scripts, docs))
 
 
-exports.default = parallel(browsersync, startWatch, html, css, images, fonts, scripts)
+exports.default = parallel(browsersync, startWatch, html, css, images, fonts, scripts, docs)
