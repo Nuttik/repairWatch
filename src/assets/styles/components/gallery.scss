@@ -1,0 +1,54 @@
+.gallery{
+  &__wrapper{
+    width: 100%;
+    overflow: hidden;
+  }
+  &__items-list{
+    display: flex;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+    animation-fill-mode: forwards;
+    transition: none;
+  }
+  &__tools{
+    display: flex;
+    width: max-content;
+    margin: auto;
+  }
+  &__indicator{      
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: $color-brown-light;
+    margin-right: 8px;
+  }  
+  &__radio{
+    display: none;
+  }
+  &_brands{
+    .gallery__items-list{
+      animation-name: rotationBrands;      
+      animation-duration:40s;
+    }
+  }
+}
+
+.gallery__radio:checked + label.gallery__indicator{
+  background-color: $color-brown;  
+  border: solid 1px #fff;
+  outline: solid 1px $color-brown;
+}
+
+@keyframes rotationBrands{
+  0% {margin-left: -100%;}
+  17% {margin-left: -100%;}
+  20% {margin-left: -200%;}
+  37% {margin-left: -200%;}
+  50% {margin-left: -300%;}
+  62% {margin-left: -300%;}
+  75% {margin-left: -400%;}
+  87% {margin-left: -400%;}
+  95% {margin-left: -500%;}
+  100% {margin-left: -500%;}
+}
