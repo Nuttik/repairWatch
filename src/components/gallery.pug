@@ -9,7 +9,7 @@ mixin gallery(modifier, paht, extension, count)
     div.gallery__tools
       - var i = 1;
           while i <= count
-            input(type="radio" name="gallery__radio-"+modifier id="item"+i).gallery__radio
-            label(for="item"+i).gallery__indicator
+            input(type="radio" name="gallery__radio-"+modifier id=modifier+"__radio-"+i).gallery__radio
+            label(for=modifier+"__radio-"+i).gallery__indicator
             <br>
              - i++

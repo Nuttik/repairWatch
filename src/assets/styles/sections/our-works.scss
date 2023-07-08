@@ -1,0 +1,23 @@
+.our-works{
+  background: url(/assets/images/bg/our-works-top.png) no-repeat top left, url(/assets/images/bg/our-works-bottom.png)no-repeat bottom right $color-gray-light;
+  display: flex;
+  padding-top: 122px;
+  padding-bottom: 84px;
+  .gallery{
+    width: 45%;
+    margin-right: 4.5rem;
+    &__item{
+      margin-right: 2rem;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  &__text{
+    li{
+      list-style: disc;
+      margin-bottom: 2rem;
+      margin-left: 2rem;
+    }
+  }
+}
