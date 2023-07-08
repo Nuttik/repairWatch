@@ -26,6 +26,9 @@ a{
 		color:$color-secondary;
 	}
 }
+p{
+	line-height: 2rem;
+}
 .page-container{
   max-width: $container-width-desk;
   margin: auto;
