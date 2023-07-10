@@ -8,6 +8,7 @@
   align-items: center;
   gap:3rem; 
   position: relative;
+  z-index: 2;
 
   &__contacts{
     display: flex;
