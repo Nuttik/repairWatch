@@ -1,0 +1,41 @@
+.contacts{
+  &__content{
+    display: flex;
+  }
+  &__block{
+    display: flex;
+    margin-bottom: 3rem;
+    a{
+      line-height: 1.5rem;
+    }
+  }
+  &__subtitle{
+    font-weight: 600;
+    width: 102px;
+  }
+  &__subtitle_delivery{
+    width: fit-content;
+    margin-bottom: 1.5rem;
+  }
+  &__info{
+  }
+  &__delivery{
+    ol{
+      list-style: auto;
+    }
+    li{
+      margin-bottom: 1.5rem;
+      margin-left: 1.5rem;
+      line-height: 1.5rem;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  address, &__map{
+    width: 50%;
+  }
+  address{
+    padding-right: 2.5rem;
+  }
+}

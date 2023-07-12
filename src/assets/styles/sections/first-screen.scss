@@ -3,6 +3,7 @@
   background-size: cover;
   color:$color-white;
   padding-top:1rem;
+
   &__bgvideo {
     position: absolute;
     left: 0;
@@ -18,7 +19,7 @@
   &__content{
     max-width: 490px;
     margin: 138px auto 0;
-    padding-bottom: 360px;
+    padding-bottom: 394px;
     z-index: 2;
     position: relative;
   }
