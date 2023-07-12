@@ -5,6 +5,9 @@
 	-ms-transition: all 0.3s linear;
 	transition: all 0.3s linear;
 }
+html {
+	scroll-behavior: smooth;
+}
 body{	
 	font-family: 'Lora', serif;
 	color:$color-black-text;

@@ -13,7 +13,7 @@ menu.onclick = function(event){
         menuWrapper.classList.toggle("open");
         wrapperBg.classList.toggle("burger-menu__wrapper-bg_open");
     }
-    if(!menuWrapper.contains(event.target)){
+    if(!menuWrapper.contains(event.target) || event.target.closest(".menu__item")){
         menuWrapper.classList.toggle("close"); 
         menuWrapper.classList.toggle("open");        
         wrapperBg.classList.toggle("burger-menu__wrapper-bg_open");
