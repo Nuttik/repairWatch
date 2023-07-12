@@ -2,7 +2,7 @@ include ../components/table.pug
 
 - let priceList= [{name:"Ремонт кварцовых часов",price:"2200"},{name:"Ремонт механических часов",price:"3000"},{name:"Замена элемента питания",price:"600"},{name:"Чистка корпуса часов",price:"600"},{name:"Восстановление корпуса",price:"2000"},{name:"Ремонт браслета",price:"500"},{name:"Мелкий ремонт часов",price:"300"},{name:"Проверка оригинальности",price:"1000"},{name:"Замена стекла",price:"550"},{name:"Шлифовка стекла",price:"400"},{name:"Ремонт хронометров",price:"4500"},{name:"Ремонт отечественных часов",price:"3000"}];
 
-sections.price
+sections.price#price
   .page-container.page-container_price
     h2 Наши услуги:
     +table(priceList)

@@ -1,0 +1,20 @@
+
+.footer{
+  background: linear-gradient(rgb(0 0 0 / 45%),rgb(0 0 0 / 45%)),url(/assets/images/bg/footer.jpg) #292928 no-repeat;
+  background-size: cover;
+  color:$color-gray-light;
+  overflow: hidden;
+  .page-container_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 324px;
+    margin-bottom: 3rem;
+  }
+  &__copyright{
+    font-size: 1rem;
+  }
+  .logo{
+  }
+}
