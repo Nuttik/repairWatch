@@ -6,11 +6,12 @@
     gap: 3rem 5rem;
     justify-content: space-between;
     justify-items: stretch;
-    width: max-content;
+    width: 100%;
     margin: 3rem auto;
     iframe {
       border: 10px solid #fff;
       border-radius: 3px;
+      width: 100%;
     }
   }
 }

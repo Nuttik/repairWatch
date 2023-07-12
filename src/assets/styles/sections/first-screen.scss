@@ -3,7 +3,10 @@
   background-size: cover;
   color:$color-white;
   padding-top:1rem;
-
+  
+  &__mob-button{
+    display: none;
+  }
   &__bgvideo {
     position: fixed;
     left: 0;

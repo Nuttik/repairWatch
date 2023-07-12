@@ -1,7 +1,6 @@
 @import "./utils/variables";
 @import "./utils/reset";
 @import "./utils/global";
-@import "./utils/responsive";
 
 @import "./components/burger-menu";
 @import "./components/header";
@@ -16,3 +15,5 @@
 @import "./sections/our-video";
 @import "./sections/contacts";
 @import "./sections/footer";
+
+@import "./utils/responsive";
