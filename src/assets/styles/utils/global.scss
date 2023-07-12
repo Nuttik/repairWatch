@@ -32,6 +32,11 @@ a{
 p{
 	line-height: 1.6rem;
 }
+section, footer{
+  position: relative;
+	z-index: 2;
+	background-color: #fff;
+}
 .page-container{
   max-width: $container-width-desk;
   margin: auto;
