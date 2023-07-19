@@ -1,10 +1,14 @@
+@import "../utils/variables";
+
 .contacts{
   &__content{
     display: flex;
     margin-bottom: 122px;
   }
   &__block{
-    display: flex;
+    display: grid;
+    grid-template-columns: 86px auto;
+    gap: 1rem;
     margin-bottom: 3rem;
     a{
       line-height: 1.5rem;
@@ -17,8 +21,6 @@
   &__subtitle_delivery{
     width: fit-content;
     margin-bottom: 1.5rem;
-  }
-  &__info{
   }
   &__delivery{
     ol{

@@ -1,9 +1,11 @@
+@import "../utils/variables";
+
 .header{
   max-width: $container-width-desk;
   margin: auto;
   padding-bottom: 0.5rem;
   display: grid;
-  grid-template-columns: 14rem auto 40px;
+  grid-template-columns: 12rem auto 40px;
   justify-items: end;
   align-items: center;
   gap:3rem; 
