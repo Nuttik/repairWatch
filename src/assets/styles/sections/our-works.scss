@@ -1,3 +1,5 @@
+@import "../utils/variables";
+
 .our-works{
   background: url(/assets/images/bg/our-works-top.png) no-repeat top left, url(/assets/images/bg/our-works-bottom.png)no-repeat bottom right $color-gray-light;
   display: flex;

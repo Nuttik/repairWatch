@@ -106,10 +106,11 @@ function startWatch()
   watch('src/assets/js/**/*', scripts)
 }
 
-function clear()
-{
-  return src('build', { read: false })
+function clear(){
+  if (src('build')) {      
+    return src('build', { read: false })
     .pipe(clean())
+  } 
 }
 
 exports.dev   = parallel(browsersync, startWatch, html, css, images, fonts, scripts, docs)
