@@ -113,7 +113,7 @@ function startWatch()
 }*/
 
 exports.dev   = parallel(browsersync, startWatch, html, css, images, fonts, scripts, docs)
-exports.build = series(/*clear*/, parallel(html, css, images, fonts, scripts, docs))
+exports.build = series(/*clear*/ parallel(html, css, images, fonts, scripts, docs))
 
 
 exports.default = parallel(browsersync, startWatch, html, css, images, fonts, scripts, docs)
