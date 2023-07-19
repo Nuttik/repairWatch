@@ -1,3 +1,5 @@
+@import "variables";
+
 @media all and (max-width: $container-width-desk) {
   .page-container{
     max-width: 100%;
@@ -55,12 +57,6 @@
   }
   .our-works__text{
     padding: 3rem;
-  }
-  .our-video__list {
-    grid-template-columns: 1fr;
-    iframe{
-      width: calc(100% - 1rem);
-    }
   }
 }
 @media all and (max-width:650px){
