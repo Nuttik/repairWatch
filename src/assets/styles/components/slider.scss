@@ -35,6 +35,13 @@
       animation-duration:40s;
     }
   }
+  &__line{
+    height: 6px;
+    width: 6rem;
+    margin: 2rem auto;
+    background-color: $color-brown-light;
+    border-radius: 8px;
+  }
 }
 
 .gallery__radio:checked + label.gallery__indicator{
@@ -61,5 +68,11 @@
       overflow-x: scroll;
       -webkit-overflow-scrolling: touch;
     }
+  }
+}
+
+@media all and (max-width: 980px) {
+  .gallery__line{
+    display: none;
   }
 }

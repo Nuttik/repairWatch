@@ -1,0 +1,26 @@
+mixin carousel(modifier, paht, extension, count, width)
+  div(class='carousel' class= "carousel_" + modifier)
+    div(class= "carousel__wrapper")
+      ul.carousel__items-list
+        - var n = 1;
+          while n <= count
+            if n == 1
+              li.carousel__item.active
+                - var i = 1;
+                  while i <= width
+                    img(src= paht + n + extension, alt="photo-" + n++, class= 'carousel__img_' + i++)
+            else 
+              li.carousel__item
+                - var i = 1;
+                  while i <= width
+                    img(src= paht + n + extension, alt="photo-" + n++, class= 'carousel__img_' + i++)
+    div.carousel__tools
+      - var i = 1;
+      - var countIndicator = count / width;
+          while i <= countIndicator
+            if i == 1
+              div.carousel__indicator.carousel__indicator_current
+            else
+              div.carousel__indicator
+            - i++
+          <br>
