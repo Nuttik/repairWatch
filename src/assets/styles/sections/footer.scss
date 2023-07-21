@@ -2,7 +2,7 @@
 @import "../utils/variables";
 
 .footer{
-  background: linear-gradient(rgb(0 0 0 / 45%),rgb(0 0 0 / 45%)),url(/assets/images/bg/footer.jpg) #292928 no-repeat;
+  background: linear-gradient(rgb(0 0 0 / 45%),rgb(0 0 0 / 45%)),url(../images/bg/footer.jpg) #292928 no-repeat;
   background-size: cover;
   color:$color-gray-light;
   overflow: hidden;
