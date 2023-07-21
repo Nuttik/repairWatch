@@ -5,15 +5,10 @@
   display: flex;
   padding-top: 122px;
   padding-bottom: 84px;
-  .gallery{
+  .carousel{
     width: 55%;
     margin-right: 4.5rem;
-    &__item{
-      margin-right: 2rem;
-      &:last-child{
-        margin-right: 0;
-      }
-    }
+    overflow: hidden;
   }
   &__text{
     li{
@@ -21,5 +16,19 @@
       margin-bottom: 2rem;
       margin-left: 2rem;
     }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .carousel__item{
+    img:last-child{
+      display: none;
+    }
+  }
+}
+
+@media all and (max-width: 980px) {
+  .our-works .carousel{
+    width: 100%;
   }
 }
