@@ -49,9 +49,9 @@ const swipedetect = (el) => {
   let elapsedTime = 0;
   
   
-  let threshold = 150;
+  let threshold = 70;
   let restraint = 100;
-  let allowedTime = 300;
+  let allowedTime = 350;
 
   surface.addEventListener('mousedown', function(e){
     startX = e.pageX;
