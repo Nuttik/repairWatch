@@ -1,57 +1,58 @@
 @import "../utils/variables";
 
-.price{
+.price {
   position: relative;
   overflow: hidden;
-  &__table{
+  &__table {
     width: 100%;
     z-index: 2;
     position: relative;
   }
-  &__row{
+  &__row {
     display: flex;
     width: calc(100% - 3rem);
     justify-content: space-between;
     padding: 1rem 1.5rem;
     font-size: 1.5rem;
     transition: all 0.1s;
-    &:nth-child(even){
+    &:nth-child(even) {
       background-color: #fff;
     }
-    &:nth-child(odd){
+    &:nth-child(odd) {
       background-color: $color-gray-light;
     }
-    &:hover{
-      color:$color-red;
+    &:hover {
+      color: $color-red;
     }
   }
-  &__value{
-    width: 140px;
+  &__value {
+    width: 160px;
+    white-space: nowrap;
   }
-  &::before{
+  &::before {
     content: url(/assets/images/bg/price.png);
     position: absolute;
     right: 0;
     top: -20%;
     z-index: 1;
   }
-  &__link{
+  &__link {
     font-family: Cormorant Infant;
     font-size: 1.5rem;
-    color:$color-red;
+    color: $color-red;
     font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin-top: 2rem;
     margin-bottom: 4rem;
-    &:hover{
-      color:$color-red;
-      path{
-        fill:$color-red;
+    &:hover {
+      color: $color-red;
+      path {
+        fill: $color-red;
       }
     }
-    svg{
+    svg {
       margin-right: 1rem;
     }
   }
