@@ -18,9 +18,9 @@ Check out the landing [here](https://repair-watch.ru).
 
 ## 💼 Features
 
-Design: A logo and website design was developed
-Adaptability: Optimised for mobile, tablet and desktop screens.
-Gallery: A showcase of the best watch repair work in the workshop.
+- Design: A logo and website design was developed
+- Adaptability: Optimised for mobile, tablet and desktop screens.
+- Gallery: A showcase of the best watch repair work in the workshop.
 
 ## 🖼️ Screenshots
 
