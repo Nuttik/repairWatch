@@ -1,0 +1,6 @@
+mixin table(priceList)
+  table.price__table
+    each service in priceList
+      tr.price__row
+        td.price__name= service.name
+        td.price__value= "от " + service.price + " руб"

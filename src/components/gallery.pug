@@ -1,0 +1,9 @@
+mixin gallery(modifier, paht, extension, count)
+  div(class='gallery' class= "gallery_" + modifier)
+    div(class= "gallery__wrapper")
+      ul.gallery__items-list
+        - var n = 1;
+          while n <= count
+            li.gallery__item
+              img(src= paht + n + extension, alt="photo-" + n++)
+    div.gallery__line

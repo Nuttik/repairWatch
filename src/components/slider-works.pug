@@ -1,0 +1,9 @@
+mixin slider(modifier, paht, extension, count)
+  div(class='slider' class= "slider_" + modifier id="slider")
+    div.slider__wrapper
+      div.slider__itemlist
+        - var n = 1;
+          while n <= count
+            div.slider__item
+              img(src= paht + n + extension, alt="photo-" + n++, class= 'slider__img')                   
+      ul.slider__indicators

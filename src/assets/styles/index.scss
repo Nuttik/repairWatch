@@ -1,0 +1,20 @@
+@import "./utils/variables";
+@import "./utils/reset";
+@import "./utils/global";
+
+@import "./components/burger-menu";
+@import "./components/header";
+@import "./components/logotype";
+@import "./components/services-list";
+@import "./components/slider";
+@import "./components/slider-works";
+
+@import "./sections/first-screen";
+@import "./sections/watch-brands";
+@import "./sections/price";
+@import "./sections/our-works";
+@import "./sections/our-video";
+@import "./sections/contacts";
+@import "./sections/footer";
+
+@import "./utils/responsive";

@@ -1,0 +1,15 @@
+@import "../utils/variables";
+
+.logo{
+  &__text{    
+    font-family: 'Cormorant Infant', serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-left: 0.75rem;
+    letter-spacing: 0.2px;
+  }
+  a{    
+    display: flex;
+    align-items: center;
+  }
+}

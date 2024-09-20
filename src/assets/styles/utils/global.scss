@@ -1,0 +1,47 @@
+@import "variables";
+
+*{
+  -webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+html {
+	scroll-behavior: smooth;
+}
+body{	
+	font-family: 'Lora', serif;
+	color:$color-black-text;
+	font-size: 1.125rem;
+}
+h1{
+	font-size: 3.1rem;
+}
+h2{
+	font-size: 3rem;
+	font-family: Cormorant Infant;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 3rem;
+	margin-bottom: 4rem;
+	}
+a{
+	&:active, &:hover {
+		color:$color-secondary;
+	}
+}
+p{
+	line-height: 1.6rem;
+}
+section, footer{
+  position: relative;
+	z-index: 2;
+	background-color: #fff;
+}
+.page-container{
+  max-width: $container-width-desk;
+  margin: auto;
+	padding-top: $section-padding-top;
+	padding-bottom: $section-padding-bottom;
+}

@@ -1,0 +1,34 @@
+@import "../utils/variables";
+
+.our-works{
+  background: url(/assets/images/bg/our-works-top.png) no-repeat top left, url(/assets/images/bg/our-works-bottom.png)no-repeat bottom right $color-gray-light;
+  display: flex;
+  padding-top: 122px;
+  padding-bottom: 84px;
+  .carousel{
+    width: 55%;
+    margin-right: 4.5rem;
+    overflow: hidden;
+  }
+  &__text{
+    li{
+      list-style: disc;
+      margin-bottom: 2rem;
+      margin-left: 2rem;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .carousel__item{
+    img:last-child{
+      display: none;
+    }
+  }
+}
+
+@media all and (max-width: 980px) {
+  .our-works .carousel{
+    width: 100%;
+  }
+}
