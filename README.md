@@ -12,9 +12,9 @@ Check out the landing [here](https://repair-watch.ru).
 
 ## 🛠️ Technologies Used
 
-Pug: A template engine to write cleaner and more readable HTML.
-SCSS: A preprocessor for enhanced CSS with variables, mixins, and nesting.
-JavaScript (ES6+): For adding interactivity and dynamic elements on the page.
+- Pug: A template engine to write cleaner and more readable HTML.
+- SCSS: A preprocessor for enhanced CSS with variables, mixins, and nesting.
+- JavaScript (ES6+): For adding interactivity and dynamic elements on the page.
 
 ## 💼 Features
 
